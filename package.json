@@ -1,7 +1,7 @@
 {
-  "name": "ripple-address-codec",
+  "name": "ledgerd-address-codec",
   "version": "2.0.2",
-  "description": "encodes/decodes base58 encoded ripple identifiers",
+  "description": "encodes/decodes base58 encoded ledgerd identifiers",
   "main": "src/index.js",
   "license": "ISC",
   "dependencies": {
@@ -10,11 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ripple/ripple-address-codec.git"
+    "url": "git://github.com/ledgerd/ledgerd-address-codec.git"
   },
   "scripts": {
     "test": "istanbul test _mocha",
-    "prepublish": "npm test && npm run lint",
     "codecov": "cat ./coverage/coverage.json | ./node_modules/codecov.io/bin/codecov.io.js",
     "lint": "if ! [ -f eslintrc ]; then curl -o eslintrc 'https://raw.githubusercontent.com/ripple/javascript-style-guide/master/eslintrc'; fi; eslint -c eslintrc src/*.js test/*.js"
   },
