@@ -6,7 +6,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var baseCodec = require('base-x');
 
-var _require = require('../node_modules/_x-address-codec@0.7.2@x-address-codec/dist/npm/utils');
+var _require = require('./utils');
 
 var seqEqual = _require.seqEqual;
 var concatArgs = _require.concatArgs;
